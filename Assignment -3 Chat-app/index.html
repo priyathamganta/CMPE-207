@@ -57,6 +57,7 @@
     
     socket.on('chat message', function(msg){
         var username = $("username");
+        $('#typing').text('');
       $('#messages').append('<li>' + (msg.username) + ':' + msg.message);
     });
   });
